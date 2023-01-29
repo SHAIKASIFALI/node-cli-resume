@@ -1,0 +1,45 @@
+{
+    "name": "{{packageName}}-resume-cli",
+    "description": "Get my Resume with just One Command ..npx {{packageName}}-resume-cli",
+    "version": "1.0.0",
+    "license": "Unlicensed",
+    "bin": {
+        "{{firstName}}-resume": "index.js"
+    },
+    "dependencies": {
+        "await-to-js": "^2.1.1",
+        "axios": "^0.19.2",
+        "boxen": "^5.1.0",
+        "center-text": "^0.1.0",
+        "chalk": "^4.1.0",
+        "clear-any-console": "^1.16.2",
+        "cli-alerts": "^1.2.1",
+        "cli-check-node": "^1.3.1",
+        "cli-handle-error": "^4.4.0",
+        "cli-handle-unhandled": "^1.1.0",
+        "cli-meow-help": "^2.0.1",
+        "cli-strip-html": "^1.0.1",
+        "cli-welcome": "^2.2.1",
+        "meow": "^7.0.1",
+        "ora": "^4.0.4",
+        "split-string": "^6.1.0",
+        "package-exists" :"^1.1.2"
+    },
+    "author": {
+        "name": "{{firstName}}{{lastName}}",
+        "email": "{{email}}",
+        "url": "{{linkedIn}}"
+    },
+    "keywords": [
+        "{{firstName}}",
+        "{{lastName}}"
+    ],
+    "files": [
+        "index.js",
+        "utils"
+    ],
+    "scripts": {
+        "start": "node index.js",
+        "format": "prettier --write \"./**/*.{js,json}\""
+    }
+}
